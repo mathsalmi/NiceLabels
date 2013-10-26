@@ -8,27 +8,11 @@
 			.label { color:navy; display:block; }
 	</style>
 	<script src="jquery.min.js"></script>
+	<script src="niceforms.js"></script>
 	<script>
 		$(document).ready(function() {
 			// set behavior
 			$('.nlabel').keyup(nlabel);
-
-			// nice labels
-			function nlabel() {
-				var f = $(this);
-				if(f.val().length > 0) {
-					// show label
-					if(f.prev('label').length == 0) {
-						var l = $('<label/>')
-									.text(f.attr('placeholder'))
-									.addClass('label');
-						f.before(l);
-					}
-				} else {
-					// hide label
-					f.prev('label').remove();
-				}
-			}
 		})
 	</script>
 </head>
