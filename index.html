@@ -6,13 +6,15 @@
 	<style>
 		.row { float:left; margin-right:20px; }
 			.label { color:navy; display:block; }
+
+		.hide { display: none; }
 	</style>
 	<script src="jquery.min.js"></script>
-	<script src="niceforms.js"></script>
+	<script src="nicelabel.js"></script>
 	<script>
 		$(document).ready(function() {
 			// set behavior
-			$('.nlabel').keyup(nlabel);
+			$('.nlabel').nicelabel();
 		})
 	</script>
 </head>
