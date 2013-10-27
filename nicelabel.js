@@ -5,7 +5,7 @@
 	 * @param  {object} options object of action functions (hide and show).
 	 * @return jQuery         jQuery elements (chaining)
 	 */
-	$.fn.nicelabel = function(options) {
+	$.fn.nicelabels = function(options) {
 
 		/**
 		 * Default actions mapping
